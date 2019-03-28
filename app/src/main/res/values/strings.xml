@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">MlshWebViewer</string>
+    <string name="app_name">MLSH</string>
+    <string name="important_news">重要活動與訊息</string>
 </resources>

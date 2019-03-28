@@ -6,14 +6,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline"
+                                                android:orientation="vertical"
+                                                app:layout_constraintGuide_percent="0.5"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline2"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.5"/>
+    <Button
+            android:text="@string/important_news"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/bt_main_news" app:layout_constraintEnd_toStartOf="@+id/guideline"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="24dp" android:layout_marginStart="24dp" android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2" android:layout_marginTop="50dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.51"
+            android:onClick="goToMainNews" android:textAppearance="@android:style/TextAppearance.Large"
+            android:textSize="30sp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
